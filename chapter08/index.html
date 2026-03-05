@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Created with EduFlow">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>프로토콜과 데이터 전송 — 약속이 있어야 대화가 된다 -  Ⅰ. 컴퓨팅 시스템</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../stylesheets/custom.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".."> Ⅰ. 컴퓨팅 시스템</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 1 - [1권] Part 1 — 컴퓨팅 시스템, 어디에나 있다</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter01/" class="dropdown-item">생각해보기 — 오늘 아침, 몇 개의 컴퓨터를 만났을까?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter02/" class="dropdown-item">하드웨어와 소프트웨어 — 몸과 마음</a>
+</li>
+                                    
+<li>
+    <a href="../chapter03/" class="dropdown-item">컴퓨팅 시스템의 구성 요소 한눈에 보기</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 2 - [1권] Part 2 — 네트워크, 연결의 시작</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter04/" class="dropdown-item">생각해보기 — 와이파이가 끊기면 무슨 일이?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter05/" class="dropdown-item">네트워크 구성 요소 탐험 — AI실 장비 찾기</a>
+</li>
+                                    
+<li>
+    <a href="../chapter06/" class="dropdown-item">IP 주소 — 우리 노트북의 이름표</a>
+</li>
+                                    
+<li>
+    <a href="../chapter07/" class="dropdown-item">네트워크 환경설정 실습 — ping과 연결 상태 확인</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">프로토콜과 데이터 전송 — 약속이 있어야 대화가 된다</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 3 - [1권] Part 3 — 사물인터넷(IoT), 모든 것이 연결되다</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter09/" class="dropdown-item">생각해보기 — 냉장고가 장을 본다고?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter10/" class="dropdown-item">IoT의 구조 — 센서 → 네트워크 → 서비스</a>
+</li>
+                                    
+<li>
+    <a href="../chapter11/" class="dropdown-item">IoT와 클라우드·빅데이터 — 데이터가 가치가 되기까지</a>
+</li>
+                                    
+<li>
+    <a href="../chapter12/" class="dropdown-item">AI실을 IoT로 재설계하기 — 상상을 현실로</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 4 - [1권] Part 4 — 정리 및 총복습</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter13/" class="dropdown-item">개념 마인드맵 완성 — 컴퓨팅 시스템 전체 지도 그리기</a>
+</li>
+                                    
+<li>
+    <a href="../chapter14/" class="dropdown-item">종합 퀴즈 — 나는 컴퓨팅 시스템 마스터!</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../chapter07/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../chapter09/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#8" class="nav-link">8장. 프로토콜과 데이터 전송 — 약속이 있어야 대화가 된다</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">🎯 이 장에서 배우는 것</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">📚 핵심 개념</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">🔨 따라하기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">📝 전체 코드</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">⚠️ 주의할 점</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">✅ 점검하기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">🔗 다음 장 미리보기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="8">8장. 프로토콜과 데이터 전송 — 약속이 있어야 대화가 된다<a class="headerlink" href="#8" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 프로토콜이 왜 필요한지 일상의 예시로 설명할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> TCP/IP 계층 구조의 기본 역할을 이해할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 데이터가 패킷으로 나뉘어 전송되는 과정을 설명할 수 있다</li>
+</ul>
+<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1-protocol">개념 1: 프로토콜(Protocol)<a class="headerlink" href="#1-protocol" title="Permanent link">&para;</a></h3>
+<p><strong>프로토콜은 마치 사람들이 대화할 때 사용하는 '공통 언어'와 같아요.</strong></p>
+<p>두 친구가 만났을 때를 생각해보세요. 한 명은 한국어만 알고, 다른 한 명은 영어만 안다면 대화가 될까요? 불가능하죠! 컴퓨터들도 마찬가지입니다.</p>
+<p><strong>정확한 정의</strong>: 프로토콜은 컴퓨터들이 네트워크상에서 데이터를 주고받기 위한 <strong>통신 규칙</strong>입니다.</p>
+<p><strong>예시로 확인</strong>:
+- 우리가 편지를 보낼 때도 약속이 있어요: 받는 사람 주소를 봉투 앞면에, 보내는 사람 주소를 뒷면에 쓰죠
+- 전화를 걸 때도 "여보세요"로 시작하는 것처럼요</p>
+<h3 id="2-tcpip-4">개념 2: TCP/IP 4계층<a class="headerlink" href="#2-tcpip-4" title="Permanent link">&para;</a></h3>
+<p><strong>TCP/IP는 마치 택배 배송 시스템과 같아요.</strong></p>
+<div class="mermaid">graph TD
+    A[응용 계층&lt;br/&gt;Application Layer] --&gt; B[전송 계층&lt;br/&gt;Transport Layer]
+    B --&gt; C[인터넷 계층&lt;br/&gt;Internet Layer]
+    C --&gt; D[네트워크 접근 계층&lt;br/&gt;Network Access Layer]
+
+    A1[웹브라우저, 이메일] --&gt; A
+    B1[TCP, UDP] --&gt; B
+    C1[IP 주소] --&gt; C
+    D1[이더넷, WiFi] --&gt; D</div>
+<p>각 계층의 역할:
+- <strong>응용 계층</strong>: 우리가 사용하는 프로그램 (웹브라우저, 카카오톡)
+- <strong>전송 계층</strong>: 데이터를 안전하게 전달 (TCP가 대표적)
+- <strong>인터넷 계층</strong>: 목적지 찾기 (IP 주소 사용)
+- <strong>네트워크 접근 계층</strong>: 실제 물리적 전송 (케이블, WiFi)</p>
+<h3 id="3-packet">개념 3: 패킷(Packet)<a class="headerlink" href="#3-packet" title="Permanent link">&para;</a></h3>
+<p><strong>패킷은 마치 큰 소포를 여러 개의 작은 상자로 나누는 것과 같아요.</strong></p>
+<p>큰 파일을 한 번에 보내면 네트워크가 막힐 수 있어요. 그래서 작은 조각(패킷)으로 나누어 보내고, 받는 쪽에서 다시 조립합니다.</p>
+<div class="mermaid">graph LR
+    A[큰 데이터] --&gt; B[패킷1]
+    A --&gt; C[패킷2]
+    A --&gt; D[패킷3]
+    A --&gt; E[패킷4]
+
+    B --&gt; F[인터넷]
+    C --&gt; F
+    D --&gt; F
+    E --&gt; F
+
+    F --&gt; G[받는 컴퓨터에서&lt;br/&gt;다시 조립]</div>
+<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-http">Step 1: 간단한 HTTP 요청 보내기<a class="headerlink" href="#step-1-http" title="Permanent link">&para;</a></h3>
+<p>파이썬으로 웹사이트에 데이터를 요청해보며 프로토콜을 체험해봅시다.</p>
+<p><strong>코드</strong>:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🌐 HTTP 프로토콜로 데이터 요청하기&quot;</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># HTTP GET 요청 보내기</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://httpbin.org/json&quot;</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 응답 정보 출력</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;상태 코드: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;응답 시간: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">elapsed</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">초&quot;</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;받은 데이터 크기: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span><span class="si">}</span><span class="s2">바이트&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>🌐 HTTP 프로토콜로 데이터 요청하기
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>----------------------------------------
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>상태 코드: 200
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>응답 시간: 0.45초
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>받은 데이터 크기: 429바이트
+</span></code></pre></div></p>
+<h3 id="step-2">Step 2: 패킷 크기 시뮬레이션<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p>큰 데이터가 어떻게 작은 패킷으로 나뉘는지 시뮬레이션해봅시다.</p>
+<p><strong>코드</strong>:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">simulate_packet_transmission</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">packet_size</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;데이터를 패킷으로 나누어 전송 시뮬레이션&quot;&quot;&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📦 원본 데이터: &#39;</span><span class="si">{</span><span class="n">data</span><span class="si">}</span><span class="s2">&#39; (길이: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📏 패킷 크기: </span><span class="si">{</span><span class="n">packet_size</span><span class="si">}</span><span class="s2">바이트&quot;</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🚀 패킷 전송 과정:&quot;</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">packets</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">packet_size</span><span class="p">):</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="n">packet</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">packet_size</span><span class="p">]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="n">packet_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">packets</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="n">packets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;패킷</span><span class="si">{</span><span class="n">packet_num</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">packet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  전송 중... 패킷</span><span class="si">{</span><span class="n">packet_num</span><span class="si">}</span><span class="s2">: &#39;</span><span class="si">{</span><span class="n">packet</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># 전송 시간 시뮬레이션</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ 총 </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">packets</span><span class="p">)</span><span class="si">}</span><span class="s2">개 패킷으로 전송 완료!&quot;</span><span class="p">)</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="k">return</span> <span class="n">packets</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c1"># 시뮬레이션 실행</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;안녕하세요! 네트워크 프로토콜을 배우고 있어요.&quot;</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="n">packets</span> <span class="o">=</span> <span class="n">simulate_packet_transmission</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+</span></code></pre></div></p>
+<h3 id="step-3">Step 3: 패킷 재조립<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>받은 패킷들을 다시 원본 데이터로 조립해봅시다.</p>
+<p><strong>코드</strong>:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">reassemble_packets</span><span class="p">(</span><span class="n">packets</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;패킷들을 다시 조립&quot;&quot;&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🔧 패킷 재조립 중...&quot;</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="c1"># 패킷에서 실제 데이터 부분만 추출</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">data_parts</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">packets</span><span class="p">:</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="n">data_part</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;: &quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># &quot;패킷1: 데이터&quot; -&gt; &quot;데이터&quot;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="n">data_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_part</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  조립 중... </span><span class="si">{</span><span class="n">packet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="c1"># 모든 데이터 합치기</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">reassembled</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_parts</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🎉 재조립 완료: &#39;</span><span class="si">{</span><span class="n">reassembled</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="k">return</span> <span class="n">reassembled</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1"># 재조립 실행</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="n">original_message</span> <span class="o">=</span> <span class="n">reassemble_packets</span><span class="p">(</span><span class="n">packets</span><span class="p">)</span>
+</span></code></pre></div></p>
+<h2 id="_4">📝 전체 코드<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">demonstrate_protocol</span><span class="p">():</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;프로토콜 기본 개념 시연&quot;&quot;&quot;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🌐 HTTP 프로토콜로 데이터 요청하기&quot;</span><span class="p">)</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://httpbin.org/json&quot;</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;상태 코드: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;응답 시간: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">elapsed</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">초&quot;</span><span class="p">)</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;받은 데이터 크기: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span><span class="si">}</span><span class="s2">바이트&quot;</span><span class="p">)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="k">def</span><span class="w"> </span><span class="nf">simulate_packet_transmission</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">packet_size</span><span class="o">=</span><span class="mi">8</span><span class="p">):</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;패킷 전송 시뮬레이션&quot;&quot;&quot;</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">📦 원본 데이터: &#39;</span><span class="si">{</span><span class="n">data</span><span class="si">}</span><span class="s2">&#39; (길이: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📏 패킷 크기: </span><span class="si">{</span><span class="n">packet_size</span><span class="si">}</span><span class="s2">바이트&quot;</span><span class="p">)</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🚀 패킷 전송 과정:&quot;</span><span class="p">)</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="n">packets</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">packet_size</span><span class="p">):</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>        <span class="n">packet</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">packet_size</span><span class="p">]</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>        <span class="n">packet_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">packets</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>        <span class="n">packets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;패킷</span><span class="si">{</span><span class="n">packet_num</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">packet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  전송 중... 패킷</span><span class="si">{</span><span class="n">packet_num</span><span class="si">}</span><span class="s2">: &#39;</span><span class="si">{</span><span class="n">packet</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ 총 </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">packets</span><span class="p">)</span><span class="si">}</span><span class="s2">개 패킷으로 전송 완료!&quot;</span><span class="p">)</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>    <span class="k">return</span> <span class="n">packets</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="k">def</span><span class="w"> </span><span class="nf">reassemble_packets</span><span class="p">(</span><span class="n">packets</span><span class="p">):</span>
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;패킷 재조립&quot;&quot;&quot;</span>
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🔧 패킷 재조립 중...&quot;</span><span class="p">)</span>
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a>    <span class="n">data_parts</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a>    <span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">packets</span><span class="p">:</span>
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a>        <span class="n">data_part</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;: &quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>        <span class="n">data_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_part</span><span class="p">)</span>
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  조립 중... </span><span class="si">{</span><span class="n">packet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a>
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a>    <span class="n">reassembled</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_parts</span><span class="p">)</span>
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🎉 재조립 완료: &#39;</span><span class="si">{</span><span class="n">reassembled</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a>    <span class="k">return</span> <span class="n">reassembled</span>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a>
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="c1"># 실행</span>
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a>    <span class="n">demonstrate_protocol</span><span class="p">()</span>
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a>
+</span><span id="__span-4-48"><a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a>    <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;안녕하세요! 네트워크를 배워요.&quot;</span>
+</span><span id="__span-4-49"><a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a>    <span class="n">packets</span> <span class="o">=</span> <span class="n">simulate_packet_transmission</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</span><span id="__span-4-50"><a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a>    <span class="n">reassemble_packets</span><span class="p">(</span><span class="n">packets</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>1. 패킷 순서가 바뀔 수 있어요</strong>
+실제 인터넷에서는 패킷들이 서로 다른 경로로 전송되어 순서가 바뀔 수 있습니다. TCP가 이를 다시 정렬해줍니다.</p>
+<p><strong>2. 프로토콜이 다르면 통신 불가</strong>
+HTTP와 FTP는 서로 다른 프로토콜이므로 직접 통신할 수 없습니다.</p>
+<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li>프로토콜이 없다면 컴퓨터 통신에서 어떤 문제가 발생할까요?</li>
+</ol>
+<details><summary>정답 확인</summary>
+서로 다른 방식으로 데이터를 해석하여 통신이 불가능해집니다. 마치 서로 다른 언어를 쓰는 사람들이 대화할 수 없는 것과 같아요.
+</details>
+
+<ol>
+<li>TCP/IP 4계층 중 IP 주소를 다루는 계층은?</li>
+</ol>
+<details><summary>정답 확인</summary>
+인터넷 계층(Internet Layer)입니다. 이 계층에서 목적지 주소를 찾아 데이터를 라우팅합니다.
+</details>
+
+<ol>
+<li>큰 파일을 패킷으로 나누어 보내는 이유는?</li>
+</ol>
+<details><summary>정답 확인</summary>
+네트워크 효율성을 높이고, 오류 발생 시 전체가 아닌 해당 패킷만 재전송하면 되며, 여러 경로로 동시 전송이 가능하기 때문입니다.
+</details>
+
+<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 <strong>IP 주소와 도메인 이름</strong>에 대해 배워봅니다. 인터넷 상의 모든 컴퓨터가 어떻게 고유한 주소를 가지는지, 그리고 복잡한 숫자 대신 www.google.com 같은 이름을 사용하는 방법을 알아보겠습니다! 🏠</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+        <script src="../javascripts/title-link.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

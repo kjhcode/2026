@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Created with EduFlow">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>IP 주소 — 우리 노트북의 이름표 -  Ⅰ. 컴퓨팅 시스템</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../stylesheets/custom.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".."> Ⅰ. 컴퓨팅 시스템</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 1 - [1권] Part 1 — 컴퓨팅 시스템, 어디에나 있다</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter01/" class="dropdown-item">생각해보기 — 오늘 아침, 몇 개의 컴퓨터를 만났을까?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter02/" class="dropdown-item">하드웨어와 소프트웨어 — 몸과 마음</a>
+</li>
+                                    
+<li>
+    <a href="../chapter03/" class="dropdown-item">컴퓨팅 시스템의 구성 요소 한눈에 보기</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 2 - [1권] Part 2 — 네트워크, 연결의 시작</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter04/" class="dropdown-item">생각해보기 — 와이파이가 끊기면 무슨 일이?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter05/" class="dropdown-item">네트워크 구성 요소 탐험 — AI실 장비 찾기</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">IP 주소 — 우리 노트북의 이름표</a>
+</li>
+                                    
+<li>
+    <a href="../chapter07/" class="dropdown-item">네트워크 환경설정 실습 — ping과 연결 상태 확인</a>
+</li>
+                                    
+<li>
+    <a href="../chapter08/" class="dropdown-item">프로토콜과 데이터 전송 — 약속이 있어야 대화가 된다</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 3 - [1권] Part 3 — 사물인터넷(IoT), 모든 것이 연결되다</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter09/" class="dropdown-item">생각해보기 — 냉장고가 장을 본다고?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter10/" class="dropdown-item">IoT의 구조 — 센서 → 네트워크 → 서비스</a>
+</li>
+                                    
+<li>
+    <a href="../chapter11/" class="dropdown-item">IoT와 클라우드·빅데이터 — 데이터가 가치가 되기까지</a>
+</li>
+                                    
+<li>
+    <a href="../chapter12/" class="dropdown-item">AI실을 IoT로 재설계하기 — 상상을 현실로</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 4 - [1권] Part 4 — 정리 및 총복습</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter13/" class="dropdown-item">개념 마인드맵 완성 — 컴퓨팅 시스템 전체 지도 그리기</a>
+</li>
+                                    
+<li>
+    <a href="../chapter14/" class="dropdown-item">종합 퀴즈 — 나는 컴퓨팅 시스템 마스터!</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../chapter05/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../chapter07/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#chapter-06-ip" class="nav-link">Chapter 06. IP 주소 — 우리 노트북의 이름표</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">🎯 이 장에서 배우는 것</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">📚 핵심 개념</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">🔨 따라하기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">📝 전체 명령어 정리</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">⚠️ 주의할 점</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">✅ 점검하기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">🔗 다음 장 미리보기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="chapter-06-ip">Chapter 06. IP 주소 — 우리 노트북의 이름표<a class="headerlink" href="#chapter-06-ip" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> IP 주소의 개념과 역할을 설명할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 내 노트북의 IP 주소를 명령 프롬프트로 직접 확인할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 같은 네트워크에 연결된 기기들의 IP 주소 패턴을 분석할 수 있다</li>
+</ul>
+<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="ip-internet-protocol-address">개념: IP 주소 (Internet Protocol Address)<a class="headerlink" href="#ip-internet-protocol-address" title="Permanent link">&para;</a></h3>
+<p><strong>🏠 비유로 이해하기</strong>
+IP 주소는 마치 아파트 주소와 같아요. 우리 반 친구 26명이 모두 같은 아파트 단지에 살더라도 각자 사는 동과 호수가 모두 다르죠? </p>
+<ul>
+<li>동네 이름(네트워크): 192.168.1</li>
+<li>집 번호(기기): 15, 23, 47...</li>
+</ul>
+<p><strong>📖 정확한 정의</strong>
+IP 주소는 네트워크에 연결된 모든 기기가 가지는 고유한 식별 번호입니다. 컴퓨터들이 서로를 찾고 데이터를 주고받기 위해 꼭 필요한 주소 체계예요.</p>
+<p><strong>💡 구성 요소</strong>
+- <strong>IPv4 형식</strong>: 192.168.1.15 (점으로 구분된 4개 숫자)
+- <strong>네트워크 부분</strong>: 192.168.1 (같은 네트워크를 의미)
+- <strong>호스트 부분</strong>: 15 (개별 기기를 구분)</p>
+<div class="mermaid">graph TD
+    A[우리집 WiFi 192.168.1.0] --&gt; B[노트북 192.168.1.15]
+    A --&gt; C[스마트폰 192.168.1.23]
+    A --&gt; D[태블릿 192.168.1.47]
+    A --&gt; E[프린터 192.168.1.8]</div>
+<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-ip">Step 1: 내 노트북의 IP 주소 확인하기<a class="headerlink" href="#step-1-ip" title="Permanent link">&para;</a></h3>
+<p><strong>Windows 명령 프롬프트 열기</strong>
+- <code>윈도우 키 + R</code> → <code>cmd</code> 입력 → 엔터
+- 또는 시작 버튼 → '명령 프롬프트' 검색</p>
+<p><strong>명령어 입력</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ipconfig
+</span></code></pre></div></p>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Windows IP 구성
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>이더넷 어댑터 이더넷:
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>   연결별 DNS 접미사  . . . . :
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>   IPv4 주소 . . . . . . . . . : 192.168.1.15
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>   서브넷 마스크 . . . . . . . : 255.255.255.0
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>   기본 게이트웨이 . . . . . . : 192.168.1.1
+</span></code></pre></div></p>
+<h3 id="step-2">Step 2: 결과 해석하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p><strong>📝 내 정보 기록하기</strong>
+- IPv4 주소: <strong><em>_</em></strong><strong><em>_</em></strong><strong>
+- 서브넷 마스크: <strong><em>_</em></strong><strong><em>_</em></strong></strong><br />
+- 기본 게이트웨이: <strong><em>_</em></strong><strong><em>_</em></strong>__</p>
+<p><strong>🔍 의미 파악하기</strong>
+- <strong>IPv4 주소</strong>: 내 노트북의 고유 주소
+- <strong>서브넷 마스크</strong>: 네트워크 영역과 기기 영역을 구분
+- <strong>기본 게이트웨이</strong>: 다른 네트워크로 나가는 출입구 (보통 공유기)</p>
+<h3 id="step-3">Step 3: 친구들과 비교하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>옆 친구의 IP 주소도 확인해서 비교해보세요!</p>
+<p><strong>비교 포인트</strong>
+- 앞의 세 숫자(192.168.1)가 같나요? → 같은 네트워크!
+- 마지막 숫자만 다른가요? → 개별 기기 구분!</p>
+<h2 id="_4">📝 전체 명령어 정리<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>기본 확인</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ipconfig
+</span></code></pre></div></p>
+<p><strong>자세한 정보 확인</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ipconfig /all
+</span></code></pre></div></p>
+<p><strong>다른 기기와의 연결 테스트</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ping 192.168.1.1
+</span></code></pre></div></p>
+<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>🚫 공인 IP vs 사설 IP</strong>
+- 지금 확인한 192.168.x.x는 '사설 IP'입니다
+- 인터넷에서 우리 집을 찾는 '공인 IP'는 따로 있어요</p>
+<p><strong>🔒 보안 주의사항</strong>
+- IP 주소는 민감한 정보이므로 온라인에 함부로 공개하지 마세요
+- 특히 공인 IP는 더욱 조심해야 합니다</p>
+<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>IP 주소 192.168.1.25에서 네트워크 부분과 호스트 부분은?</strong></li>
+</ol>
+<details><summary>정답 확인</summary>
+네트워크 부분: 192.168.1 / 호스트 부분: 25
+</details>
+
+<ol>
+<li><strong>같은 WiFi에 연결된 두 기기의 IP가 192.168.0.10과 192.168.0.20이라면, 이들은 서로 통신할 수 있을까요?</strong></li>
+</ol>
+<details><summary>정답 확인</summary>
+네, 가능합니다. 같은 네트워크(192.168.0)에 속하므로 직접 통신할 수 있습니다.
+</details>
+
+<ol>
+<li><strong>기본 게이트웨이의 역할은 무엇인가요?</strong></li>
+</ol>
+<details><summary>정답 확인</summary>
+다른 네트워크로 데이터를 전달하는 관문 역할을 합니다. 주로 공유기가 이 역할을 담당합니다.
+</details>
+
+<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>다음 시간에는 <strong>도메인과 DNS</strong>에 대해 배워봅니다. 숫자로 된 IP 주소 대신 www.google.com 같은 이름을 사용할 수 있는 비밀을 알아보세요! 🌐</p>
+<hr />
+<p><strong>💡 핵심 요약</strong>
+- IP 주소는 네트워크 상 기기의 고유 주소입니다
+- <code>ipconfig</code> 명령어로 내 IP 주소를 확인할 수 있습니다<br />
+- 같은 네트워크의 기기들은 IP 주소 앞부분이 동일합니다</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+        <script src="../javascripts/title-link.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

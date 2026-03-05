@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Created with EduFlow">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>IoT의 구조 — 센서 → 네트워크 → 서비스 -  Ⅰ. 컴퓨팅 시스템</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../stylesheets/custom.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".."> Ⅰ. 컴퓨팅 시스템</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 1 - [1권] Part 1 — 컴퓨팅 시스템, 어디에나 있다</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter01/" class="dropdown-item">생각해보기 — 오늘 아침, 몇 개의 컴퓨터를 만났을까?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter02/" class="dropdown-item">하드웨어와 소프트웨어 — 몸과 마음</a>
+</li>
+                                    
+<li>
+    <a href="../chapter03/" class="dropdown-item">컴퓨팅 시스템의 구성 요소 한눈에 보기</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 2 - [1권] Part 2 — 네트워크, 연결의 시작</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter04/" class="dropdown-item">생각해보기 — 와이파이가 끊기면 무슨 일이?</a>
+</li>
+                                    
+<li>
+    <a href="../chapter05/" class="dropdown-item">네트워크 구성 요소 탐험 — AI실 장비 찾기</a>
+</li>
+                                    
+<li>
+    <a href="../chapter06/" class="dropdown-item">IP 주소 — 우리 노트북의 이름표</a>
+</li>
+                                    
+<li>
+    <a href="../chapter07/" class="dropdown-item">네트워크 환경설정 실습 — ping과 연결 상태 확인</a>
+</li>
+                                    
+<li>
+    <a href="../chapter08/" class="dropdown-item">프로토콜과 데이터 전송 — 약속이 있어야 대화가 된다</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 3 - [1권] Part 3 — 사물인터넷(IoT), 모든 것이 연결되다</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter09/" class="dropdown-item">생각해보기 — 냉장고가 장을 본다고?</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">IoT의 구조 — 센서 → 네트워크 → 서비스</a>
+</li>
+                                    
+<li>
+    <a href="../chapter11/" class="dropdown-item">IoT와 클라우드·빅데이터 — 데이터가 가치가 되기까지</a>
+</li>
+                                    
+<li>
+    <a href="../chapter12/" class="dropdown-item">AI실을 IoT로 재설계하기 — 상상을 현실로</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Part 4 - [1권] Part 4 — 정리 및 총복습</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chapter13/" class="dropdown-item">개념 마인드맵 완성 — 컴퓨팅 시스템 전체 지도 그리기</a>
+</li>
+                                    
+<li>
+    <a href="../chapter14/" class="dropdown-item">종합 퀴즈 — 나는 컴퓨팅 시스템 마스터!</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../chapter09/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../chapter11/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#iot" class="nav-link">IoT의 구조 — 센서 → 네트워크 → 서비스</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">🎯 이 장에서 배우는 것</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">📚 핵심 개념</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">🔨 따라하기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">📝 전체 시스템 예시</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">⚠️ 주의할 점</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">✅ 점검하기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">🔗 다음 장 미리보기</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="iot">IoT의 구조 — 센서 → 네트워크 → 서비스<a class="headerlink" href="#iot" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> IoT 시스템의 3계층 구조(센서-네트워크-서비스)를 설명할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 센서와 액추에이터의 차이점을 구분할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 실생활 IoT 사례를 3계층으로 분석할 수 있다</li>
+</ul>
+<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="iot-3">개념: IoT의 3계층 구조<a class="headerlink" href="#iot-3" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작</strong>: "IoT는 마치 우리 몸의 신경계와 같아요. 눈(센서)으로 본 것이 신경(네트워크)을 통해 뇌(서비스)로 전달되고, 뇌가 판단해서 손(액추에이터)으로 행동하는 것처럼 말이에요!"</p>
+<p><strong>정확한 정의</strong>:
+IoT 시스템은 다음 3개 계층으로 구성됩니다:</p>
+<ol>
+<li><strong>디바이스 계층</strong> 🎯</li>
+<li><strong>센서</strong>: 환경 정보를 수집 (온도, 습도, 움직임 등)</li>
+<li>
+<p><strong>액추에이터</strong>: 물리적 동작을 수행 (모터, LED, 스피커 등)</p>
+</li>
+<li>
+<p><strong>네트워크 계층</strong> 🌐</p>
+</li>
+<li>데이터 전송 통로 (WiFi, 블루투스, 4G/5G 등)</li>
+<li>
+<p>디바이스와 서비스를 연결하는 다리 역할</p>
+</li>
+<li>
+<p><strong>서비스 계층</strong> ☁️</p>
+</li>
+<li>데이터 분석 및 의사결정</li>
+<li>사용자 인터페이스 제공 (앱, 웹사이트)</li>
+</ol>
+<div class="mermaid">flowchart LR
+    A[센서&lt;br/&gt;🌡️온도측정] --&gt; B[네트워크&lt;br/&gt;📶WiFi]
+    B --&gt; C[서비스&lt;br/&gt;☁️클라우드]
+    C --&gt; D[네트워크&lt;br/&gt;📶WiFi]
+    D --&gt; E[액추에이터&lt;br/&gt;❄️에어컨]
+
+    style A fill:#e1f5fe
+    style E fill:#fff3e0
+    style C fill:#f3e5f5</div>
+<p><strong>예시로 확인</strong>: 스마트홈 시나리오
+- 온도 센서가 28도 측정 → WiFi로 클라우드 전송 → 서비스에서 "너무 덥다" 판단 → 에어컨 가동 명령 전송 → 에어컨 동작</p>
+<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="step-1">Step 1: 센서와 액추에이터 구분하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p><strong>활동</strong>: 우리 교실의 IoT 장치들을 찾아보세요!</p>
+<p><strong>센서 (입력 장치)</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>🎤 마이크 - 소리 감지
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>📷 카메라 - 영상 촬영  
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>🌡️ 온도계 - 온도 측정
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>💡 조도센서 - 밝기 측정
+</span></code></pre></div></p>
+<p><strong>액추에이터 (출력 장치)</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>🔊 스피커 - 소리 출력
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>💡 전등 - 빛 출력
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>❄️ 에어컨 - 온도 조절
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>📱 디스플레이 - 화면 출력
+</span></code></pre></div></p>
+<h3 id="step-2-iot">Step 2: 실제 IoT 제품 분석하기<a class="headerlink" href="#step-2-iot" title="Permanent link">&para;</a></h3>
+<p><strong>선택한 제품</strong>: 스마트 도어락</p>
+<div class="mermaid">graph TD
+    A[지문센서 👆] --&gt; B[WiFi 📶]
+    C[카메라 📷] --&gt; B
+    D[터치패드 🔢] --&gt; B
+
+    B --&gt; E[스마트폰 앱 📱]
+    E --&gt; F[클라우드 서비스 ☁️]
+
+    F --&gt; G[WiFi 📶]
+    G --&gt; H[도어락 모터 🔓]
+    G --&gt; I[알림 LED 💡]
+
+    style A fill:#e1f5fe
+    style C fill:#e1f5fe  
+    style D fill:#e1f5fe
+    style H fill:#fff3e0
+    style I fill:#fff3e0
+    style F fill:#f3e5f5</div>
+<h3 id="step-3">Step 3: 데이터 흐름 이해하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p><strong>정보의 여행 경로</strong>:
+1. 센서 데이터 수집 📊
+2. 네트워크로 전송 🚀<br />
+3. 클라우드에서 분석 🧠
+4. 결정사항을 다시 전송 📡
+5. 액추에이터가 동작 🎬</p>
+<h2 id="_4">📝 전체 시스템 예시<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="mermaid">flowchart TB
+    subgraph "🏠 스마트홈 시스템"
+        subgraph "디바이스 계층"
+            A1[온도센서 🌡️]
+            A2[습도센서 💧]
+            A3[움직임센서 👥]
+            A4[에어컨 ❄️]
+            A5[가습기 💨]
+            A6[조명 💡]
+        end
+
+        subgraph "네트워크 계층"
+            B[WiFi 라우터 📶]
+        end
+
+        subgraph "서비스 계층"
+            C1[클라우드 서버 ☁️]
+            C2[스마트폰 앱 📱]
+        end
+    end
+
+    A1 --&gt; B
+    A2 --&gt; B
+    A3 --&gt; B
+    B --&gt; C1
+    C1 --&gt; C2
+    C1 --&gt; B
+    B --&gt; A4
+    B --&gt; A5
+    B --&gt; A6</div>
+<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>센서 ≠ 액추에이터</strong>: 센서는 정보를 "감지"하고, 액추에이터는 "동작"을 수행합니다.</p>
+</li>
+<li>
+<p><strong>네트워크 중요성</strong>: 네트워크가 끊어지면 IoT 시스템 전체가 작동하지 않습니다. 마치 전화선이 끊어지면 통화를 할 수 없는 것과 같아요!</p>
+</li>
+</ol>
+<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li>스마트 워치에서 센서와 액추에이터를 각각 2개씩 찾아보세요.</li>
+</ol>
+<details><summary>정답 확인</summary>
+센서: 심박센서, 가속도센서, GPS센서 등
+액추에이터: 진동모터, 디스플레이, 스피커 등
+</details>
+
+<ol>
+<li>IoT 시스템에서 네트워크 계층의 역할은 무엇인가요?</li>
+</ol>
+<details><summary>정답 확인</summary>
+센서에서 수집한 데이터를 서비스로 전달하고, 서비스의 명령을 액추에이터로 전송하는 연결 통로 역할
+</details>
+
+<ol>
+<li>만약 집의 WiFi가 끊어진다면 스마트홈 기기들은 어떻게 될까요?</li>
+</ol>
+<details><summary>정답 확인</summary>
+네트워크 연결이 끊어져서 원격 제어가 불가능하고, 자동화 기능도 작동하지 않습니다. 단, 기기 자체의 기본 기능은 사용 가능할 수 있습니다.
+</details>
+
+<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>다음 시간에는 <strong>"센서의 종류와 활용"</strong>에 대해 배워보겠습니다. 온도센서부터 이미지센서까지, 다양한 센서들이 어떻게 우리 주변 환경을 인식하는지 직접 실험해보며 알아보겠습니다! 🔍</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+        <script src="../javascripts/title-link.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
